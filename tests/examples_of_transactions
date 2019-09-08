@@ -1,0 +1,450 @@
+
+INSPECTORS
+
+	pub : "9e5c484186492b644b4abd0dc6ca4ea28470360527ed35eaba607b1ded2cb29f", 
+	secret : "623af7a1e7005f1facd9da883566c470c0de3f251dfb8c42e340400967f9fd0d9e5c484186492b644b4abd0dc6ca4ea28470360527ed35eaba607b1ded2cb29f"
+
+		 {
+		  "body": {
+		    "name": "Bob",
+		    "pub_key": "9e5c484186492b644b4abd0dc6ca4ea28470360527ed35eaba607b1ded2cb29f",
+		    "user_type": "1"
+		  },
+		  "message_id": 2,
+		  "protocol_version": 0,
+		  "service_id": 128,
+		  "signature": "99e11189cbc951c850021bcd0e29e5fd3e17b272f9763e2df8fc53a674eeb91e7532180b55635ab95714b750c3124037a2e5d98d5172c104a1edebb5f71a3f00"
+		}
+
+
+	pub : "6193927c71234be4ad266e5e01aa1115258415d36ad6d04e2393e15b9ea1d64e", 
+	secret : "4969ea7ba59f75ea46c6ae97e6f439f7b5e6a658547746af9a4b3ed9520ddc196193927c71234be4ad266e5e01aa1115258415d36ad6d04e2393e15b9ea1d64e"
+
+		{
+		  "body": {
+		    "name": "John",
+		    "pub_key": "6193927c71234be4ad266e5e01aa1115258415d36ad6d04e2393e15b9ea1d64e",
+		    "user_type": "1"
+		  },
+		  "message_id": 2,
+		  "protocol_version": 0,
+		  "service_id": 128,
+		  "signature": "f11fda0dceaa2977664706527217af36d89a47aafcb0981a51ebe159591db479da6b7b835dc58478e18d11a4364682ae9e6be322abd4b78b41bb60b313c55f0e"
+		}
+
+USERS
+	pub: "5da6f2211647fb1995964fc8e536fd74b4e4d0e5e33f2eefc4d99262fb8e911a",
+	secret: "3baeff6d4a36862ac3d980573093e106b406b6606313a15b1213716741bc64955da6f2211647fb1995964fc8e536fd74b4e4d0e5e33f2eefc4d99262fb8e911a"
+		john = {
+		  "body": {
+		    "name": "John",
+		    "pub_key": "5da6f2211647fb1995964fc8e536fd74b4e4d0e5e33f2eefc4d99262fb8e911a",
+		    "user_type": "0"
+		  },
+		  "message_id": 2,
+		  "protocol_version": 0,
+		  "service_id": 128,
+		  "signature": "a30c24cec0ff27a481baac665b62d54bd442be532f9c2b15f4ab451f05aa9b0a0ef9f820ef737c024a85c251d1a2d1c4aac3102f08d7c546631da758b7e1160d"
+		}
+
+
+	pub: "c7b7f9557503d79fd8f4ae72e15af7e6791535902d88b6238ba4335bb2056930"
+	secret: "2f20b98c23a6eb19f0c50795b75b3301350824fe7a7f75086e489096d48452a3c7b7f9557503d79fd8f4ae72e15af7e6791535902d88b6238ba4335bb2056930"
+		bob = {
+		  "body": {
+		    "name": "Bob",
+		    "pub_key": "c7b7f9557503d79fd8f4ae72e15af7e6791535902d88b6238ba4335bb2056930",
+		    "user_type": "1"
+		  },
+		  "message_id": 2,
+		  "protocol_version": 0,
+		  "service_id": 128,
+		  "signature": "4cd575770df137a7f0161fbdfdb05a02b82f12ca4869d51aa3d64a5db5dcbb027f6e40ab25aef7a32bb70f4569eb6ba9a15d1307aac4d645993a621a486acf0c"
+		}
+
+	pub: "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+	secret: "32d9ba6c4eca480fcdaa699bb9c9a0cfb1c89128667ccc99d18fa3ff9d011ff1f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b"
+		alice = {
+		  "body": {
+		    "name": "Alice",
+		    "pub_key": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+		    "user_type": "0"
+		  },
+		  "message_id": 2,
+		  "protocol_version": 0,
+		  "service_id": 128,
+		  "signature": "011bfa1d5be6835592556252eb78f5440f2d55a499dfd1d29a2c3baefa80433309b35a264c5bfa2e5419f86f17e4c3b9ace21fc9b5e34114d4661a888c9f5c0f"
+		}
+
+
+ISSUE
+
+	signed by issuer
+
+		 issue = {
+		  "body": {
+		    "amount": "11",
+		    "issuer_key": "c7b7f9557503d79fd8f4ae72e15af7e6791535902d88b6238ba4335bb2056930",
+		    "pub_key": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+		    "seed": "0"
+		  },
+		  "message_id": 1,
+		  "protocol_version": 0,
+		  "service_id": 128,
+		  "signature": "4e8718578f18f3db7f0eee98ef008f3b062926046ca4649ee73ae1daa9d5f37cca1f3f67926c4f80abf85c06f4077d273a07d6d6a3115d0d9d8b498633485901"
+		}
+
+
+
+CANCEL FOR ISSUE
+	issue = {
+	  "body": {
+	    "amount": "60",
+	    "issuer_key": "c7b7f9557503d79fd8f4ae72e15af7e6791535902d88b6238ba4335bb2056930",
+	    "pub_key": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+	    "seed": "4"
+	  },
+	  "message_id": 1,
+	  "protocol_version": 0,
+	  "service_id": 128,
+	  "signature": "c8cce79bf4ad1a3f017d9b4128f4cd3c6f6da782814ec4772bdbdc0959ef7fd5ece31296f87d496dfa7d7e19016872ae6af98bbcb1218c8a3b7b49255f121803"
+	}
+
+	signed by inspector
+
+		cancel = {
+		  "body": {
+		    "pub_key": "6193927c71234be4ad266e5e01aa1115258415d36ad6d04e2393e15b9ea1d64e",
+		    "sender": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+		    "tx_hash": "a6408ed4272dd921eaf4b0cbd4338b53f5e91818aec629131578d428191ffaa2"
+		  },
+		  "message_id": 5,
+		  "protocol_version": 0,
+		  "service_id": 128,
+		  "signature": "da69c1b2794f8a3775e7025f23ef116a84c7f438fb15906dc202f99821c05c96916c2bb10683ca97d6f3b7a2ac1c6129323e8316d1ed2edbe0570041fd47a80f"
+		}
+
+
+
+	signed by user, not inspector
+
+		cancel for issue = {
+		  "body": {
+		    "pub_key": "c7b7f9557503d79fd8f4ae72e15af7e6791535902d88b6238ba4335bb2056930",
+		    "sender": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+		    "tx_hash": "a6408ed4272dd921eaf4b0cbd4338b53f5e91818aec629131578d428191ffaa2"
+		  },
+		  "message_id": 5,
+		  "protocol_version": 0,
+		  "service_id": 128,
+		  "signature": "fa7ecd0a42e8509e2504f9ed360f7e07bf99951d7581745e3e37bede2a0ba64308ed464e43ade9cf6aebccf0ac05c58b512d24149693bc35a9534764be955305"
+		}
+
+
+
+
+
+PREPARATION
+
+			{
+			  "body": {
+			    "amount": "11",
+			    "meta": "",
+			    "pub_key": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+			    "seed": "0"
+			  },
+			  "message_id": 3,
+			  "protocol_version": 0,
+			  "service_id": 128,
+			  "signature": "30f06d08ac8ff5f8c6635ac6afc5d4f7ce9f41cac5add44a581c89ec5c8cdf683da8eb7ce75c6238813b09241b8b5cb3890c3f766405beb07d13a8cdfafdf405"
+			}
+
+ACCEPTANCE
+
+	signed by inspector
+
+		accept is false
+
+			preparation = {
+			  "body": {
+			    "amount": "11",
+			    "meta": "",
+			    "pub_key": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+			    "seed": "0"
+			  },
+			  "message_id": 3,
+			  "protocol_version": 0,
+			  "service_id": 128,
+			  "signature": "30f06d08ac8ff5f8c6635ac6afc5d4f7ce9f41cac5add44a581c89ec5c8cdf683da8eb7ce75c6238813b09241b8b5cb3890c3f766405beb07d13a8cdfafdf405"
+			}
+			acceptance = {
+			  "body": {
+			    "accept": false,
+			    "amount": "11",
+			    "pub_key": "c7b7f9557503d79fd8f4ae72e15af7e6791535902d88b6238ba4335bb2056930",
+			    "seed": "1",
+			    "sender_key": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b"
+			  },
+			  "message_id": 4,
+			  "protocol_version": 0,
+			  "service_id": 128,
+			  "signature": "46b517d63e5c12eb9149eb007688eed2ec765b5fecaae23131b6b4e47cd0d09809aee2855fc65f1b6e6efe09187fa76bb928318c425f3afd0599132c6d896602"
+			}
+
+
+		accept is true
+
+			preparation = {
+			  "body": {
+			    "amount": "11",
+			    "meta": "",
+			    "pub_key": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+			    "seed": "2"
+			  },
+			  "message_id": 3,
+			  "protocol_version": 0,
+			  "service_id": 128,
+			  "signature": "0e0028b23bb471eade11e67e088a9f63b09efdef46d31fc2e2ed3423ef72e25e1662b9a198961e6d64b83aaee7f908d6243672711a605ceb6251b9fdbf8d8e0b"
+			}
+
+			acceptance = {
+			  "body": {
+			    "accept": true,
+			    "amount": "11",
+			    "pub_key": "c7b7f9557503d79fd8f4ae72e15af7e6791535902d88b6238ba4335bb2056930",
+			    "seed": "3",
+			    "sender_key": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b"
+			  },
+			  "message_id": 4,
+			  "protocol_version": 0,
+			  "service_id": 128,
+			  "signature": "d3c22db1c199c04942b271756bf96c1643688815964d778fa64a655bc497f10eda1af5498c284e18531a9d4923ad401eb6d58b3c5d6f6053cdc4935d29280c03"
+			}
+
+	signed by user
+		accept is false
+			preparation = {
+			  "body": {
+			    "amount": "11",
+			    "meta": "",
+			    "pub_key": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+			    "seed": "0"
+			  },
+			  "message_id": 3,
+			  "protocol_version": 0,
+			  "service_id": 128,
+			  "signature": "30f06d08ac8ff5f8c6635ac6afc5d4f7ce9f41cac5add44a581c89ec5c8cdf683da8eb7ce75c6238813b09241b8b5cb3890c3f766405beb07d13a8cdfafdf405"
+			}
+			acceptance = {
+			  "body": {
+			    "accept": false,
+			    "amount": "11",
+			    "pub_key": "a25eb2b89b38114035034e7b625578d998db542d534257c31d83493805cbbd75",
+			    "seed": "1",
+			    "sender_key": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b"
+			  },
+			  "message_id": 4,
+			  "protocol_version": 0,
+			  "service_id": 128,
+			  "signature": "2f8cebae1eddb7b39bf6bb2299e20eb126649d4a2ca5f2fd1a7c340294b95516f03ddab792c86c70249daed15fdf851c7a5c931988006aaec6f72b802d840209"
+			}
+		accept is true
+			preparation = {
+			  "body": {
+			    "amount": "11",
+			    "meta": "",
+			    "pub_key": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+			    "seed": "0"
+			  },
+			  "message_id": 3,
+			  "protocol_version": 0,
+			  "service_id": 128,
+			  "signature": "30f06d08ac8ff5f8c6635ac6afc5d4f7ce9f41cac5add44a581c89ec5c8cdf683da8eb7ce75c6238813b09241b8b5cb3890c3f766405beb07d13a8cdfafdf405"
+			}
+			acceptance = {
+			  "body": {
+			    "accept": true,
+			    "amount": "11",
+			    "pub_key": "0dfa64a38b4f4e0b97265ec729c63f03662e2964a1e51a62436897edcddd7a1d",
+			    "seed": "1",
+			    "sender_key": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b"
+			  },
+			  "message_id": 4,
+			  "protocol_version": 0,
+			  "service_id": 128,
+			  "signature": "658b53df39426463b001360e5989e2a1c80f4ee4964c169c4cabcd07362c8b1ed9f6a12587f5ec8916e8d4c4c531a7463ac803f189bc11aafbc95b6e87df9300"
+			}
+
+TRANSFER
+	{
+	  "body": {
+	    "amount": "60",
+	    "from": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+	    "seed": "4",
+	    "to": "5da6f2211647fb1995964fc8e536fd74b4e4d0e5e33f2eefc4d99262fb8e911a"
+	  },
+	  "message_id": 0,
+	  "protocol_version": 0,
+	  "service_id": 128,
+	  "signature": "5a7cd30daa4ec4f2bdf5ec5b647850ef0bb13ca35fb4d41c6a4fb91935bc45fff219d0825312715b6b613ed3250360862bc0e0ffc4a13b9250670fcaab255102"
+	}
+
+CANCEL FOR TRANSFER 
+	signed by inspector
+		{
+		  "body": {
+		    "pub_key": "c7b7f9557503d79fd8f4ae72e15af7e6791535902d88b6238ba4335bb2056930",
+		    "sender": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+		    "tx_hash": "9b0bbe7b6678a210c0a2ced92b1b68d0edbb33421bcbd20a391b5f7122bfe2be"
+		  },
+		  "message_id": 5,
+		  "protocol_version": 0,
+		  "service_id": 128,
+		  "signature": "0a025f52ee7d259f045819282f8d87044eb3da561b21e256707e5d4779564c5f6519fda50af75e34951e209c240fa2777d0f316ab8ef52a55e65593e3f3a5906"
+		}
+
+	signed by user
+		{
+		  "body": {
+		    "pub_key": "5da6f2211647fb1995964fc8e536fd74b4e4d0e5e33f2eefc4d99262fb8e911a",
+		    "sender": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+		    "tx_hash": "9b0bbe7b6678a210c0a2ced92b1b68d0edbb33421bcbd20a391b5f7122bfe2be"
+		  },
+		  "message_id": 5,
+		  "protocol_version": 0,
+		  "service_id": 128,
+		  "signature": "c13a79c15a794b31ae5f9385a556a594f1f58bd6bbbe72ec55fb49acbedfe30629df82d35a410b25a16e2dcd3f17caf6445eebdbe643a64acf37eb22651e9400"
+		}
+CANCEL FOR PREPARATION
+	signed by inspector
+	
+		preparation = {
+			  "body": {
+			    "amount": "11",
+			    "meta": "",
+			    "pub_key": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+			    "seed": "0"
+			  },
+			  "message_id": 3,
+			  "protocol_version": 0,
+			  "service_id": 128,
+			  "signature": "30f06d08ac8ff5f8c6635ac6afc5d4f7ce9f41cac5add44a581c89ec5c8cdf683da8eb7ce75c6238813b09241b8b5cb3890c3f766405beb07d13a8cdfafdf405"
+			}
+
+		cancellation = {
+			  "body": {
+			    "pub_key": "c7b7f9557503d79fd8f4ae72e15af7e6791535902d88b6238ba4335bb2056930",
+			    "sender": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+			    "tx_hash": "fbe8cbf37d830054a4ca1ac1ce80a6210628aaa2a0789859dc2e483ea860eaff"
+			  },
+			  "message_id": 5,
+			  "protocol_version": 0,
+			  "service_id": 128,
+			  "signature": "8d9ce4653aa1fe9cc95e02e34025427455085692058959a1672713518e871493b092fb01d43f53d3b58ccc6378d6dc7f1933bd4ec8287ca5390512bb2ee61303"
+			}
+	signed by user
+
+		preparation = {
+			  "body": {
+			    "amount": "11",
+			    "meta": "",
+			    "pub_key": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+			    "seed": "0"
+			  },
+			  "message_id": 3,
+			  "protocol_version": 0,
+			  "service_id": 128,
+			  "signature": "30f06d08ac8ff5f8c6635ac6afc5d4f7ce9f41cac5add44a581c89ec5c8cdf683da8eb7ce75c6238813b09241b8b5cb3890c3f766405beb07d13a8cdfafdf405"
+			}
+			cancellation = {
+			  "body": {
+			    "pub_key": "5da6f2211647fb1995964fc8e536fd74b4e4d0e5e33f2eefc4d99262fb8e911a",
+			    "sender": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+			    "tx_hash": "fbe8cbf37d830054a4ca1ac1ce80a6210628aaa2a0789859dc2e483ea860eaff"
+			  },
+			  "message_id": 5,
+			  "protocol_version": 0,
+			  "service_id": 128,
+			  "signature": "a60058b01e9bbf8c0669c5a37a59fbc11aa718080e4ecd3a3fed86827bb5b9698924b7e89ae5f019b4c4f20e77600a7ce4b77a68dcab6646deffe97d8f58f609"
+			}
+
+
+CANCEL FOR MAILACCEPTANCE
+	signed by inspector
+		preparation = {
+		  "body": {
+		    "amount": "11",
+		    "meta": "",
+		    "pub_key": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+		    "seed": "0"
+		  },
+		  "message_id": 3,
+		  "protocol_version": 0,
+		  "service_id": 128,
+		  "signature": "30f06d08ac8ff5f8c6635ac6afc5d4f7ce9f41cac5add44a581c89ec5c8cdf683da8eb7ce75c6238813b09241b8b5cb3890c3f766405beb07d13a8cdfafdf405"
+		}
+		acceptance = {
+		  "body": {
+		    "accept": true,
+		    "amount": "11",
+		    "pub_key": "c7b7f9557503d79fd8f4ae72e15af7e6791535902d88b6238ba4335bb2056930",
+		    "seed": "1",
+		    "sender_key": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b"
+		  },
+		  "message_id": 4,
+		  "protocol_version": 0,
+		  "service_id": 128,
+		  "signature": "789908f5addbe018a5cb872a8f8df4e34cfbd1e6ca12f87bd589858173c916a503b7a51a6159fba9d5e22b7450893c696ef5a51256de9012a53f91bedd5cf00e"
+		}
+		cancellation = {
+		  "body": {
+		    "pub_key": "c7b7f9557503d79fd8f4ae72e15af7e6791535902d88b6238ba4335bb2056930",
+		    "sender": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+		    "tx_hash": "2a3367bace6671dc591ae3ecce19687511586ea8dac54b4360bfd4d5143865ad"
+		  },
+		  "message_id": 5,
+		  "protocol_version": 0,
+		  "service_id": 128,
+		  "signature": "e358de255e4d6b1d16a94f6a2b1b747c9545864a4edf6aae452202dce84d7da8d28915c489e8ff43529820b178dabf333f144f10972a0b6d57325c1864069400"
+		}
+	signed by user
+		preparation = {
+		  "body": {
+		    "amount": "11",
+		    "meta": "",
+		    "pub_key": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+		    "seed": "0"
+		  },
+		  "message_id": 3,
+		  "protocol_version": 0,
+		  "service_id": 128,
+		  "signature": "30f06d08ac8ff5f8c6635ac6afc5d4f7ce9f41cac5add44a581c89ec5c8cdf683da8eb7ce75c6238813b09241b8b5cb3890c3f766405beb07d13a8cdfafdf405"
+		}
+		acceptance = {
+		  "body": {
+		    "accept": true,
+		    "amount": "11",
+		    "pub_key": "c7b7f9557503d79fd8f4ae72e15af7e6791535902d88b6238ba4335bb2056930",
+		    "seed": "1",
+		    "sender_key": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b"
+		  },
+		  "message_id": 4,
+		  "protocol_version": 0,
+		  "service_id": 128,
+		  "signature": "789908f5addbe018a5cb872a8f8df4e34cfbd1e6ca12f87bd589858173c916a503b7a51a6159fba9d5e22b7450893c696ef5a51256de9012a53f91bedd5cf00e"
+		}
+		cancellation = {
+		  "body": {
+		    "pub_key": "5da6f2211647fb1995964fc8e536fd74b4e4d0e5e33f2eefc4d99262fb8e911a",
+		    "sender": "f2a46e4365bffec7d663fdec92a76e73e08652baed23cfbb02744bd00f6e588b",
+		    "tx_hash": "2a3367bace6671dc591ae3ecce19687511586ea8dac54b4360bfd4d5143865ad"
+		  },
+		  "message_id": 5,
+		  "protocol_version": 0,
+		  "service_id": 128,
+		  "signature": "8efe188e59f77e3f857da1d700a84985d74681ce9bc3036a003f212d2eb9e5aed85f1f6997a7a1cdae177b65221bb2b8a393e79b4233ef1be42b5f0c8215dd06"
+		}
+
+
+		
+
